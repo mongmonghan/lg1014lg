@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:700,900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif;}
+		body,h1,p{margin:0; padding:0;}
+		.wrap{ width: 1200px; margin:auto;  height:500px; position: relative;}
+		header .wrap, footer .wrap{width:100%;margin-top: 0}
+
+		header .wrap{ 
+			background:url(0-1.jpg);
+			background-size: cover;
+			background-position: 0px -130px;
+			}
+
+		header .wrap h1{
+			font-size: 70px;
+			color:white; 
+			position: absolute; 
+			top:220px; 
+			left:calc(50% - 430px);}
+
+		a{
+			font-size: 60px;
+			color:black; 
+			position: absolute; 
+ 			top: 250px;
+			left:calc(50% - 10px);}
+
+		.pan{background: black; height:500px;
+				opacity: 0.4; transition: all 1s}
+		.pan:hover{ opacity: 0.7; }
+
+		h2{ font-size: 50px; 
+			font-weight: 900;
+			line-height: 1.3;
+			letter-spacing: -1px;
+			position: absolute;}
+		a{ font-size: 50px; 
+			font-weight: 900;
+			line-height: 1.3;
+			letter-spacing: -1px;
+			position: absolute;}
+		p{ font-size: 20px; 
+			font-weight: 700;
+			line-height: 1.6;
+			color:#888;
+			letter-spacing: -1px;
+			word-spacing: -2px;
+			width:400px;
+			position: absolute;
+			word-break: keep-all;}
+
+		img{ position: absolute; }
+		.bold{color:black;}
+
+	section .wrap{opacity: 0;position: relative;margin-top: 100px}
+	#a{height: 700px;}
+	#b{height: 700px;}
+	#c{height: 600px;}
+	#d{height: 550px;}
+	#e{height: 700px;margin-bottom: 250px}
+	#f{margin-bottom: 0;padding-bottom: 0}
+	#f .wrap{height: 600px;width: 100%;background: url(6.jpg);background-size: cover;margin-bottom: 0;padding-bottom: 0}
+
+		@keyframes f{
+			from{opacity: 0;}
+			to{opacity: 1;}
+		}
+		@keyframes ltor{
+			from{left:0px;opacity: 0;}
+			to{left:100px;opacity: 1;}
+		}
+		@keyframes rtol{
+			from{left:800px;opacity: 0;}
+			to{left:700px;opacity: 1;}
+		}
+		@keyframes at{
+			from{top:300px; opacity: 0;}
+			to{top:100px; opacity: 1;}
+		}
+		@keyframes bt{
+			from{top:250px; opacity: 0;}
+			to{top:50px; opacity: 1;}
+		}
+		#img1{left: 300px;top:350px;width: 550px;}
+		#img2{left: 300px;top:250px;}
+		#img3{left: 800px;top:100px;}
+		#img4{left: 100px;top:100px;}
+		#img5{top:300px;width: 550px}
+
+		#monitor{position: fixed;background: black;
+		padding: 5px; height: 20px; color: white; width: 70px; top: 0; right: 0;}
+
+		#c{background: url(grass.jpg);background-size: cover;background-attachment: fixed;}
+
+		.ah2{left: 650px;top: 100px;}
+		.ap{left: 750px;top: 300px}
+		.bh2{left: 0px;top:100px;}
+		.bp{left: 200px;top: 300px}
+		.ch2{left: 700px;top: 50px;color: white}
+		.cp{left: 550px;top: 220px}
+		.dh2{left: 0px;top: 150px}
+		.dp{left: 300px;top: 300px}
+		.eh2{left: 600px;top: 100px}
+		.ep{left: 700px;top: 250px}
+		.fh2{left: 600px;top: 100px}
+		.bold{color:white;}
+
+		footer{background:black;}
+		footer .wrap{height:300px;padding: 0;margin-top: 0}
+		footer p{ text-align: center; color: white; width:inherit; 
+			padding-top: 140px;}
+	</style>
+
+</head>
+
+<body>
+	<header>
+			<div class="wrap">
+				<div class="pan"></div>
+				<h1>LG PuriCare을 소개합니다.</h1>
+			</div>
+	</header>
+
+	<section id="a">
+
+	<div id="t1" class="wrap">
+	<img src="1.jpg"  id="img1">
+	<h2 class="ah2">360˚<br>강력한 청정</h2><p class="ap">NASA에서 개발한 항공기 팬 기술이 적용되어 
+	더 넓어진 청정 면적으로 360˚ 모든 방향에서 먼지를 흡입하고 
+	초미세먼지까지 제거하여 어디에 두어도 
+	빈틈없이 청정바람을 보내줍니다.
+	</p>
+	</div>
+	</section>
+
+	<section id="b">
+	<div id="t2"  class="wrap">
+	<img src="2.png"  id="img2">
+	<h2 class="bh2">토탈 알러지/
+		<br>집진 플러스 필터</h2>
+	<p class="bp">
+	토탈 알러지 집진/플러스 필터를 적용하여, 
+	0.01㎛의 극초미세먼지까지 99.99% 이상 제거합니다.
+	</p>
+	</div>
+	</section>
+
+	<section id="c">
+	<div id="t3" class="wrap">
+	<img src="3.png" id="img3">
+	<h2 class="ch2"><span style="background-color: #368128">토탈 유해가스 필터</span></h2>
+	<p class="cp"><span style="background-color: #368128" class="bold">스모그 원인물질(SO2, NO2), 새집증후군 물질 
+	(톨루엔, 포름알데히드), 생활냄새까지 잡아줍니다.</span>
+	</p>
+	</div>
+	</section>
+
+	<section id="d">
+	<div id="t4" class="wrap">
+	<img src="4.png" id="img4">
+	<h2 class="dh2">공기청정 디스플레이</h2>
+	<p class="dp">
+	미세먼지, 초미세먼지, 극초미세먼지 농도를 
+	상세하게 확인할 수 있고, 냄새, 먼지를 종합한 
+	종합청정도를 4단계로 보여줍니다.
+	</p>
+	</div>
+	</section>
+
+	<section id="e">
+	<div id="t5" class="wrap">
+	<img src="5.jpg" id="img5">
+	<h2 class="eh2">아기케어</h2>
+	<p class="ep">
+	아기의 생활 공간에 맞춰 
+	하단으로 공기를 집중하여 안심청정존을 형성합니다.
+	</p>
+	</div>
+	</section>
+
+	<section id="f">
+		<div id="t6" class="wrap">
+		<a href="https://www.lge.co.kr/lgekor/product/aircare/air-cleaner/productDetail.do?cateId=6240&prdId=EPRD.331202&utm_campaign=201805-Puricare_aircleaner&utm_medium=BrandSearch&utm_source=Naver&utm_content=maincopy_0118#featureBtnsWrap">홈페이지 바로가기
+		</a>
+		</div>
+
+	</section>
+
+	<div id="monitor"></div>
+	<script type="text/javascript">
+		window.onscroll = function () {
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t.toFixed(1);
+
+
+		if (300 < t) {
+		t1.style.animation = "at 2s forwards";} 
+		else {t1.style.animation = "";}
+		if (300 < t) {img1.style.animation = "ltor 2s forwards";}
+		else {img1.style.animation = "";}
+		
+		if (1000<t) {t2.style.animation = "bt 2s forwards";}
+		else{t2.style.animation = "";}
+		if (1000<t) {img2.style.animation = "rtol 2s forwards";}
+		else{img2.style.animation = "";}
+
+		if (t>1600) {t3.style.animation = "at 2s forwards";}
+		else{t3.style.animation = "";}
+		if (t>1600) {img3.style.animation = "ltor 2s forwards";}
+		else{img3.style.animation = "";}
+
+		if (t>2500) {t4.style.animation = "bt 2s forwards";}
+		else{t4.style.animation = "";}
+		if (t>2500) {img4.style.animation = "rtol 2s forwards";}
+		else{img4.style.animation = "";}
+
+		if (t>3300) {t5.style.animation = "bt 2s forwards";}
+		else{t5.style.animation = "";}
+		if (t>3300) {img5.style.animation = "ltor 2s forwards";}
+		else{img5.style.animation = "";}
+
+		if (4050<t) {t6.style.animation="f 2s forwards";}
+		else{t6.style.animation = "";}
+	}
+	</script>
+
+	<footer>
+			<div class="wrap">
+				<p>2019&copy;Hankyong National University.</p>
+			</div>
+		</footer>
+</body> 
+</html>
